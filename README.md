@@ -40,12 +40,18 @@ Configuration
 Set project specific configurations such as file paths in the  `config.js` file.
 
 
-Run Tasks
+Gulp Tasks
 -----------
-Use the default task to bundle all assets, run tasks individually or create a custom build in the `gulpfile`
+Use the `default` task to bundle all assets, run tasks individually or create a custom build in the gulpfile.
 ```
- gulp default
+ gulp task
 ```
+
+* `styles` - compile scss, create source maps & minify
+* `scripts` - merge & minify scripts
+* `fingerprint` - fingerprint files
+* `revision` - revision files after fingerprint
+
 
 Gulp Modules Used
 -----------
